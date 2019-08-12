@@ -2,7 +2,7 @@
 require 'pry'
 require 'require_all'
 
-require_all '../05-code-challenge-review'
+require_all '../06-code-challenge-review'
 
 hamilton = Musical.new("Hamilton", "NYC")
 cats = Musical.new("Cats", "NYC")
