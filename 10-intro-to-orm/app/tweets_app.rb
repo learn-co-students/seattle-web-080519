@@ -3,10 +3,10 @@ class TweetsApp
     puts 'Welcome to Twitter'
 
     puts 'Enter a username:'
-    username = gets.chomp
+    username = $stdin.gets.chomp
 
     puts 'Enter a message:'
-    message = gets.chomp
+    message = $stdin.gets.chomp
 
     tweet = Tweet.new({'username' => username, 'message' => message})
 

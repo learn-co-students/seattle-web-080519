@@ -10,7 +10,7 @@ task :console do
   Pry.start
 end
 
-desc "testing"
+desc "run Tweeter"
 task :tweeter do
   TweetsApp.new.call
 end
