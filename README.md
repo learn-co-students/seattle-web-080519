@@ -12,11 +12,9 @@ Here are some good mod 1 links:
 ActiveRecord::Base.logger = nil
 ```
 
-### Resources for projects:
-- [Trello](https://trello.com/)
-- [Public APIs](https://github.com/public-apis/public-apis)
-- [JSON Viewer Chrome Add-In](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh?hl=en-US)
-- Google Projects
-- GitHub Project Board
-- [Repl in Ruby](https://repl.it/languages/ruby)
-- 
+### General Mod 1 Resources
+- [Ruby Documentation](https://ruby-doc.org/core-2.6.1/)
+- [Ruby Gems](https://rubygems.org/)
+- [Active Record Basiscs](https://guides.rubyonrails.org/active_record_basics.html)
+- [Repl.it](https://repl.it/languages/ruby)
+- Practice SQL to ActiveRecord queries and class associations - [Scuttle](http://www.scuttle.io/)
