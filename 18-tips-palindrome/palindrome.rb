@@ -10,9 +10,28 @@ def palindrome?(string)
     true
 end
 
+start = Time.now
+palindrome?("racecar")
+final = Time.now
+puts "Solution 1 Run Time:"
+puts (final-start)*1000
+puts
+
+
+
 def palindrome?(string)
     string == string.reverse
 end
+
+start = Time.now
+palindrome?("racecar")
+final = Time.now
+puts "Solution 2 Run Time:"
+puts (final-start)*1000
+puts
+
+
+
 
 def palindrome?(string)
     if string.downcase == string.reverse.downcase
@@ -21,6 +40,16 @@ def palindrome?(string)
         return false
     end
 end
+
+start = Time.now
+palindrome?("racecar")
+final = Time.now
+puts "Solution 3 Run Time:"
+puts (final-start)*1000
+puts
+
+
+
 
 def palindrome?(word)
     word.downcase!
@@ -38,6 +67,16 @@ def palindrome?(word)
     reversed_ary.join("") == word
 
 end
+
+start = Time.now
+palindrome?("racecar")
+final = Time.now
+puts "Solution 4 Run Time:"
+puts (final-start)*1000
+puts
+
+
+
 
 puts palindrome?("racecar")
 puts palindrome?("flatiron")
