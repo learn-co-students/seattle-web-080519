@@ -1,21 +1,28 @@
 require 'pry'
 
 class Pet
+
   attr_reader :breed, :gender #:name, :age
   # attr_writer :age, :name
   attr_accessor :name, :age
 
   # @instance_variable
   # local_variable
+  @@all = []
 
   def initialize(name, breed, age, gender)
     @name = name
     @breed = breed
     @age = age
     @gender = gender
+    # binding.pry
+    @@all << self
     # @location = location
   end
 
+  def self.all
+    @@all
+  end
   # def name
   #   return @name
   # end
@@ -73,7 +80,11 @@ megan_pet2 = {
 }
 
 grace_pet_obj = Pet.new("melodie", "toy_poodle", 13, "female")
+marisa_pet_obj = Pet.new("Callie", "maltese", 4, "female")
+megan_pet_obj = Pet.new("Patron", "chuhuahua", 10, "male")
+megan_pet2_obj = Pet.new("Papyrus", "calico", 11, "female")
 
+# pet_objs = [grace_pet_obj, marisa_pet_obj,megan_pet_obj,megan_pet2_obj]
 
 students_pets = [grace_pet,marisa_pet,megan_pet,megan_pet2]
 Pry.start

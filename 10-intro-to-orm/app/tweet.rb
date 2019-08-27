@@ -2,7 +2,6 @@ class Tweet
   attr_accessor :username, :message
   @@all = []
   def initialize(input= {})
-    # binding.pry
     @username = input["username"]
     @message = input["message"]
     @@all << self
@@ -12,19 +11,23 @@ class Tweet
     @@all
   end
 
-  def insert_data(message)
+  def self.insert_data(message, username)
     sql = "INSERT INTO tweets(username, message)
     VALUES(?,?)"
 
-    DB[:conn].execute(sql, self.username, message)
+    DB[:conn].execute(sql, username, message)
   end
 
-  def create_table
-    sql = "CREATE TABLE tweets"
+  def self.create_table
+    sql = "CREATE TABLE IF NOT EXISTS tweets(id INTEGER PRIMARY KEY, username TEXT, message TEXT)"
 
     DB[:conn].execute(sql)
   end
 
+  def self.find
+  end
 
+  def self.udpate
+  end
 
 end
