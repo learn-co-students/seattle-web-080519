@@ -1,0 +1,21 @@
+<div>
+  <h1>
+    <%= @cat.name %>
+    <%= binding.pry %>
+  </h1>
+
+  <p>
+    <a href="/cats/<%= @cat.id %>/edit">
+      edit
+    </a>
+  </p>
+
+  <p>
+    <form method="POST" action="/cats/<%= @cat.id %>">
+      <input type="hidden" name="_method" value="delete" >
+      <input type="submit" value="Delete">
+    </form>
+  </p>
+
+  <img src="<%= @cat.image_url %>" />
+</div>

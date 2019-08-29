@@ -1,0 +1,17 @@
+<% if @cats.length == 0 %>
+  <p>
+    Sorry, no cats right meow.
+    <a href="/cats/new">Add one!</a>
+  </p>
+<% end %>
+
+<% @cats.each do |cat| %>
+  <div>
+    <h1>
+      <a href="/cats/<%= cat.id %>">
+        <%= cat.name %>
+      </a>
+    </h1>
+    <img src="<%= cat.image_url %>" />
+  </div>
+<% end %>

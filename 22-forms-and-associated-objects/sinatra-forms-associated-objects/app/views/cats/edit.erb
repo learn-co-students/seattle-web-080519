@@ -1,0 +1,9 @@
+  <div>
+    <form method="POST" action="/cats/<%= @cat.id %>">
+      <input type="hidden" name="_method" value="patch">
+
+      <input type="text" name="name" value="<%= @cat.name %>" />
+      <input type="text" name="image_url" value="<%= @cat.image_url %>" />
+      <input type="submit" value="Save">
+    </form>
+  </div>
