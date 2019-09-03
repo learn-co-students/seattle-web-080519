@@ -1,0 +1,30 @@
+<p>Title: <%= @article.title %></p>
+<p>Author: <%= @article.author %></p>
+
+<table border="1">
+  <tr>
+    <th>helper</th>
+    <th>path</th>
+    <th>url</th>
+  </tk>
+  <tr>
+    <td>articles</td>
+    <td><%= articles_path %></td>
+    <td><%= articles_url %></td>
+  </tr>
+  <tr>
+    <td>articles(article)</td>
+    <td><%= articles_path(@article) %></td>
+    <td><%= articles_url(@article) %></td>
+  </tr>
+  <tr>
+    <td>edit_articles</td>
+    <td><%= edit_articles_path %></td>
+    <td><%= edit_articles_url %></td>
+  </tr>
+  <tr>
+    <td>new_articles</td>
+    <td><%= new_articles_path %></td>
+    <td><%= new_articles_url %></td>
+  </tr>
+</table>
