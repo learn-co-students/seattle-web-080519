@@ -1,0 +1,32 @@
+<h1>Create a Puzzle</h1>
+<% if @puzzle.errors.any? %>
+  <div id="error_explanation">
+    <h2>There were some errors:</h2>
+    <ul>
+      <% @puzzle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<%= form_for @puzzle do |f| %>
+  <div>
+    Puzzle Name: <%= f.text_field :name %>
+  </div>
+  <div>
+    Number of Pieces: <%= f.number_field :num_pieces %>
+  </div>
+
+  <div>
+    Category: <select name="category_id">
+      <% Category.all.each do |category| %>
+        <option value="<%= category.id %>">
+          <%= category.name %>
+        </option>
+      <% end %>
+    </select>
+  </div>
+
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,11 @@
+<%= link_to "Create Puzzle", new_puzzle_path %>
+
+<ul>
+  <% @puzzles.each do |puzzle| %>
+    <li>
+      <%= puzzle.name %>
+      (<%= puzzle.num_pieces %> pieces)
+      <%= link_to "Delete", puzzle, method: :delete, data: {confirm: 'Really?'} %>
+    </li>
+  <% end %>
+</ul>

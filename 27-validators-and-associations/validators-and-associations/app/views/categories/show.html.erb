@@ -1,0 +1,10 @@
+  <div>
+    <h3><%= @category.name %><h3>
+    <ul>
+      <% @category.puzzles.each do |puzzle| %>
+        <li>
+          <%= link_to puzzle.name, puzzle %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
