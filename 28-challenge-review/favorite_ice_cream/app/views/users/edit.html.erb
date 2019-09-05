@@ -1,0 +1,26 @@
+<h1>Edit User</h1>
+
+<%= form_for @user do |f| %>
+  <p>
+    Name: <%= f.text_field :name %>
+  </p>
+
+  <div>
+    Favorite Ice Cream Flavor:
+    <select name="ice_cream_id">
+      <% IceCream.all.each do |ice_cream| %> 
+        <% if @user.ice_cream.id == ice_cream.id %>
+          <option selected value="<%= ice_cream.id %>">
+            <%= ice_cream.flavor %>
+          </option>
+        <% else %>
+          <option value="<%= ice_cream.id %>">
+            <%= ice_cream.flavor %>
+          </option>
+        <% end %>
+      <% end %>
+    </select>
+  </div>
+
+  <%= f.submit "Save User" %>
+<% end %>
