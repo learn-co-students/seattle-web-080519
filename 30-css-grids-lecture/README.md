@@ -17,11 +17,11 @@
 - [X] Navigate Chrome DevTools HTML inpsector. 
     - Functionality is useful for trials on CSS changes. 
     - Shortcut is `CMD+OPTION+J`. 
-- [] External styling via a CSS file. 
+- [X] External styling via a CSS file. 
     - Needs to be imported into `application.html.erb` file. 
     - `class` can reference multiple elements - use a `.` to call classes
     - `id` has to be unique and can only be used to select one element - use a `#` to call id's. 
-- [] Introduce Grids and how to design the layout of a page prior to choosing number of rows & columns. 
+- [X] Introduce Grids and how to design the layout of a page prior to choosing number of rows & columns. 
     - Must contain a parent `div` to hold all the children `div`s. 
          - Container holds the grid size information (`display: grid`, `grid-template-columns`, `grid-template-rows`, `grid-auto-rows`, `grid-gap`, `grid-template-areas`). 
     - Individual children divs hold `grid-column`, `grid-row`, `grid-area` information.
