@@ -1,0 +1,27 @@
+
+<h1>Auth App</h1>
+
+<div>
+  Logged in as:
+  <% if session[:username] %>
+      <%= session[:username] %>  
+  <% else %>
+      no one
+  <% end %>
+</div>
+
+<div>
+  <form method='post' action='/signin'>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    Username: <input name='username'>
+    <input type='submit' value='login'>
+  </form>
+</div>
+
+<div>
+  <%= link_to "Secret Recipes", "/secret" %> (must be logged in)
+ </div>
+
+<div>
+  <%= link_to "Logout", '/logout', method: 'POST' %>
+</div>
