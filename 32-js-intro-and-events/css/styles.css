@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(27, 51, 73);
+    color: #e5e9ec;
+}
+
+.welcome {
+    color: #c8f121;
+}
+
+#food-list li {
+    color: #3aacee;
+}
