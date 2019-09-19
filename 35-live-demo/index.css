@@ -1,0 +1,26 @@
+body {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+#list-panel {
+  margin: 20px;
+  background-color: powderblue;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 4px;
+  width: 250px;
+  font-size: 20px;
+  border: 1px solid blue;
+}
+
+#usersList {
+  background-color: red;
+}
+
+.li-user {
+  background-color: violet;
+}
