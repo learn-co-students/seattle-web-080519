@@ -1,0 +1,29 @@
+body{
+	color: #56cfff;
+	background: #4b4a0b;
+}
+
+.card{
+	display:inline-block;
+	border-style: double;
+	/* width: 260px; */
+	padding: 18px;
+	background: #246f72;
+}
+
+img {
+	height:165px;
+}
+
+.form-control-sm {
+	background: #8dd6a9;
+	color:rgb(75, 7, 7);
+}
+
+#edit-form {
+	display: none;
+}
+
+.btn {
+	margin: 13px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite Books</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Change the font from google fonts-->
+      <h1>Book List</h1>
+      <div class="row">
+        <div class="col col-md-6">
+          <form id="new-book-form">
+            <div class="form-group">
+              <h4>New Book:</h4>
+              Book Title:<br />
+              <input
+                class="form-control-sm"
+                type="text"
+                name="title"
+                value=""
+              />
+              <br />
+              Author:<br />
+              <input
+                class="form-control-sm"
+                type="text"
+                name="author"
+                value=""
+              />
+              <br /><br />
+              Book Cover URL:<br />
+              <input
+                class="form-control-sm"
+                type="text"
+                name="cover"
+                value=""
+              />
+              <br /><br />
+              <button type="submit" class="btn btn-success">Submit Book</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form id="edit-form">
+            <div class="form-group">
+              <h3>Edit Book:</h3>
+              Book Title:<br />
+              <input
+                class="form-control-sm"
+                type="text"
+                name="title"
+                value=""
+              />
+              <br />
+              Author:<br />
+              <input
+                class="form-control-sm"
+                type="text"
+                name="author"
+                value=""
+              />
+              <br /><br />
+              Book Cover URL:<br />
+              <input
+                class="form-control-sm"
+                type="text"
+                name="cover"
+                value=""
+              />
+              <br /><br />
+              <button type="submit" class="btn btn-success">
+                Done Editing
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="book-list" class="row">
+      </div>
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
