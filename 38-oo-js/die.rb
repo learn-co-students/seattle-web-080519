@@ -11,6 +11,9 @@ class Die
   end
 end
 
+class D20 < Die
+end
+
 d6 = Die.new
 puts d6.roll
 puts d6.roll
